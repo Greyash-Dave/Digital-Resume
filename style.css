@@ -1,0 +1,130 @@
+/* General styling for the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    max-width: 960px;
+    margin: auto;
+    background-color: #F4F7FB; /* Light Gray/Off-White background */
+    color: #333333; /* Dark Gray text for readability */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: #2E4A62; /* Dark Blue */
+    padding: 2em 0; /* Added vertical padding */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    color: white; /* White text for contrast */
+}
+
+/* Main content section layout */
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 3em;
+    background-color: #FFFFFF; /* White background for content area */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section headings (h1, h2, h3) */
+h1 {
+    font-size: 3em;
+    letter-spacing: .6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 600; /* Bold for the name */
+    color: white; /* White text on dark background */
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-weight: 500; /* Slightly bold for section headings */
+    color: #2E4A62; /* Dark Blue for section titles */
+}
+
+h3 {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+    font-weight: bold; /* Regular font weight */
+    color: #6C9FCF; /* Light Blue for subheadings */
+}
+
+/* Section styling for content */
+section {
+    margin: 1.5em 2em 4em 2em; /* Adjusted margins for better spacing */
+}
+
+p {
+    margin: .5em 0; /* Increased margin between paragraphs */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+/* Links styling */
+a {
+    color: black; /* Light Blue color for links */
+    text-decoration: none;
+    font-weight: 500; /* Medium weight for links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F2A900; /* Golden Yellow on hover for a pop of color */
+}
+
+/* Icons (font-awesome) */
+i {
+    margin-right: .5em;
+    font-weight: 400;
+    color: #2E4A62; /* Dark Blue icons */
+}
+
+/* Paragraph for contact information */
+p {
+    margin: .5em 0;
+    line-height: 1.5;
+}
+
+/* Horizontal line (hr) between sections */
+hr {
+    border: none;
+    background-color: #A8B9C7; /* Muted Light Gray */
+    height: 1px;
+    margin: 1em 0;
+}
+
+/* Right and left article sections */
+#mainLeft {
+    border-right: 1px solid #A8B9C7; /* Light Gray border */
+    padding-right: 2em; /* Padding for better spacing */
+}
+
+#mainRight {
+    padding-left: 2em;
+}
+
+/* Additional styling for contact, work, and other sections */
+h1, h2, h3 {
+    margin-bottom: 0.5em; /* Space below headers for visual clarity */
+}
+
+/* Added styles for borders and general layout */
+section {
+    border-bottom: 1px solid #A8B9C7; /* Light Gray border for section separation */
+    padding-bottom: 1.5em; /* Space after each section */
+}
+
+section:last-child {
+    border-bottom: none; /* Remove border from last section */
+}
+
+/* Responsiveness (for smaller screens) */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+        padding: 1em;
+    }
+}
